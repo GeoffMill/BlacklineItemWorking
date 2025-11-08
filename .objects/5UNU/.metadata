@@ -1,0 +1,12 @@
+﻿{
+  "Name": "BlackLine Edge(1)",
+  "Type": "App",
+  "Id": "5UNUwUeqGUOxlXXDa1-soQ",
+  "Reference": "keT-zgegR02CwGaH31CryQ/5UNUwUeqGUOxlXXDa1-soQ",
+  "Created": "2025-10-27T13:03:58.0396658Z",
+  "Updated": "2025-10-27T13:03:58.0396658Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

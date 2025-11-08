@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge BlackLine Systems",
+  "Type": "Screen",
+  "Id": "GLDgaiszzU6RjbBccLWmFA",
+  "Reference": "keT-zgegR02CwGaH31CryQ/GLDgaiszzU6RjbBccLWmFA",
+  "ParentRef": "keT-zgegR02CwGaH31CryQ/jZlptOE1RUKHv04LVaNB_A",
+  "Created": "2025-10-27T08:51:50.518441Z",
+  "Updated": "2025-10-27T08:51:50.518441Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

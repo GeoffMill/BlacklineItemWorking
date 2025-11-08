@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click Month and Year",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "067FRKPQp0uvfeemRN6eXw",
+  "Reference": "keT-zgegR02CwGaH31CryQ/067FRKPQp0uvfeemRN6eXw",
+  "ParentRef": "keT-zgegR02CwGaH31CryQ/pVFY6jbmgk-MMm1q6SqsNg",
+  "Created": "2025-10-27T13:03:58.72834Z",
+  "Updated": "2025-10-27T13:03:58.72834Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

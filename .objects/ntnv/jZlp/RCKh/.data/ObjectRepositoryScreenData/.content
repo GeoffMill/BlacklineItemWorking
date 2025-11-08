@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="7HuJ9-3Vvk27C7L5o5eXgw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-1928, -8, 1936, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVDhPlZNNSFRRGIbvxkUiFN6fuX8zc8e53XAhuhRFqCxKRAK1FBdl5UosFGdhIbXJCBcGmeAfZvlT5m60fbu2tUuiFhIRloMz5c/iwtt37rnT3LlB2YEP7pxznvd87/sxQn4drCr4n8qkG+Z8VBBM23YPViU6OEyJ+DSrwEf5Mg4pkHshYaJPw5NBLSSQ/JeAiHfjMrqbTLwdZxZEZNfqChb+JrD/UsJ8SvXgrYXCfpGAVmG7u3QxCLL6uSKh/6KBm+0Gwuc+ypcUt92ucyayzwsXvtFrradNPOjRqQvR3xfx5amEe9eMPzNIdRq4dMZEjkQySxLO10fpov5bkNWbMQUD1M3neQk7a/XBDJKehfazJi6ciqKxNgyLSN+J4O4VHXu+lUy6SICH+HFGxlHDQk11zBsZ29sneOKG5o2Pfef3fJQvJrBLgbU2mqiqikGz4pjuV72XHxP8qFfzQFbbZO9hrx4KMWa7HRQiAz9MyVi5reKYbuH+dR1DXRSiD7+flDFC1raehcZYTgJCeQLTA+xV3mLzySjKVAvfFzm8QfBgp47MMv+dW68tFjgSsbwQmZXNORmVlTGUyBaGL+v4SqNLdRjI+rmw+vEq0IFIAq9HFc/C0i0VbTTOMfJ9tcVAKXXRQt1skLU8zLLZWQ/8GyMJx7VOONAqHCgJB7LlIO44iB7n31rSATsPFicF4RdH6OoDeRpyFAAAAABJRU5ErkJggg==" Selector="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" Url="https://smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="3472362d568ead8d09c4c78448fbf9f7.jpg" xmlns="">0cQNvCtPuYU6v0uMJqIauog</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

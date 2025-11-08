@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0TgV7NE1n0eIw-R0QD2jNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/ExecGrid.aspx" CVScreenId="c4946b57-642c-4b4b-9e38-0e5a60ddd81e" DesignTimeRectangle="125, 274, 210, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='button' aaname='View All Items' innertext='View All Items' /&gt;" Guid="2b48d1e9-edc7-4c5d-b47d-462bb433aa61" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='View Reconciliations' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c4946b57-642c-4b4b-9e38-0e5a60ddd81e" CvTextArea="128, 243, 158, 21" CvTextArgument="Reconciliations" CvType="Text" DesignTimeRectangle="129, 241, 156, 26" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='Reconciliations' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' type='' innertext='Reconciliations' check:innerText='Reconciliations' /&gt;" Guid="538f34b2-772d-4ec0-9110-43e4b99d068e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b39c8a75c6476b18ebc5bee53942cbce.png" xmlns="">0sV116eGRbkuOPVKWxJw8Pw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

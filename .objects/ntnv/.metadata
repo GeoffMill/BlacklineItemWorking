@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge BlackLine Systems",
+  "Type": "App",
+  "Id": "ntnvFO_9QkuwyddhQt_H8A",
+  "Reference": "keT-zgegR02CwGaH31CryQ/ntnvFO_9QkuwyddhQt_H8A",
+  "Created": "2025-10-27T08:51:50.4525903Z",
+  "Updated": "2025-10-27T08:51:50.4525903Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

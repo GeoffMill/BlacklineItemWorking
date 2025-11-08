@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TYJQb0wV1EOj2N4tHI-NpQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="677bccd3-aedc-46ae-963e-a4fba7471077" CvTextArea="32, 223, 123, 20" CvTextArgument="Item Details" CvType="Text" DesignTimeRectangle="32, 221, 1857, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='itemDetailTitle' aaname='Item Details' innertext='Item Details' /&gt;" Guid="2ae7295c-2d64-40e2-980d-24b6478488b3" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="767d852d1dc869478121d06860e70293.png" xmlns="">0Am8if_mnCUatFyxZnXaOqg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

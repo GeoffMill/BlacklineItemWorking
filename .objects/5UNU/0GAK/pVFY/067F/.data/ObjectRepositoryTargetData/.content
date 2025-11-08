@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ejqjyZFkGU6HftQ1feBXfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/HomePages/HomeExec.aspx" CVScreenId="c9acd420-354f-4a80-b59d-06394cd8d4c1" CvTextArea="1219, 752, 56, 14" CvTextArgument="JAN-18" CvType="Text" DesignTimeRectangle="1176, 741, 291, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' class='period' parentid='gh-period-selector-panel' tag='A' innertext='{0}' /&gt;&quot;, PeriodClick)]" Guid="fb71d5b0-0684-4627-be94-d6b446e471f0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c9acd420-354f-4a80-b59d-06394cd8d4c1" CvTextArea="1191, 500, 40, 14" CvTextArgument="2018" CvType="Text" DesignTimeRectangle="1192, 497, 38, 20" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' type='' innertext='{0}' check:innerText='{0}' /&gt;&quot;, YearClick)]" Guid="af1bee81-ab6e-4a57-b1d0-9eae0c404e89" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="abe6ea097de49122b0ca2c5b15cc730c.png" xmlns="">0YjHj18mGQUKRrSUgeOI5Iw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="2">
+      <ObjectRepositoryVariableData DefaultValue="JAN-18" Name="PeriodClick" />
+      <ObjectRepositoryVariableData DefaultValue="2018" Name="YearClick" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

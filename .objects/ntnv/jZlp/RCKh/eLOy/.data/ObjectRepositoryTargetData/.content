@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EbkfzSSYvUWxHbnnPI3mVA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="ab07519b-e97f-4317-a2e5-495f500a8333" CvElementArea="704, 980, 68, 35" CvType="InputBox" DesignTimeRectangle="747, 986, 18, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='A' aaname='select' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='select' check:innerText='select' /&gt;" Guid="f06a8958-8825-4d48-b780-b79705f58ba7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ab07519b-e97f-4317-a2e5-495f500a8333" CvTextArea="632, 988, 66, 16" CvTextArgument="Page size:" CvType="Text" DesignTimeRectangle="633, 984, 64, 22" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' aaname='Page size:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Page size:' check:innerText='Page size:' /&gt;" Guid="e3044e1d-dd87-438b-9030-6e3a83c6c52d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="75aa4873a23926dde44741f7e3063981.png" xmlns="">0Tahp_dNdlE-CPb-p8GeScg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

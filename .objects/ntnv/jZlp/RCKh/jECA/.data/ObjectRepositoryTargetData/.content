@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="I0PolBKie0mjgiHyn1oqrg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="30d58c63-8581-4809-becc-2042c6e9e28b" CvElementArea="1344, 228, 27, 26" CvType="CloseButton" DesignTimeRectangle="1350, 234, 15, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl aria-role='button' aaname='Close' colName='Close' innertext='Close' /&gt;" Guid="806baa73-a823-4486-9a16-f1b360fe63f8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="30d58c63-8581-4809-becc-2042c6e9e28b" CvTextArea="590, 235, 260, 15" CvTextArgument="Documents Attached To This Item" CvType="Text" DesignTimeRectangle="590, 231, 260, 22" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Documents Attached To This Item' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' colName='Documents Attached To This Item' innertext='Documents Attached To This Item' check:innerText='Documents Attached To This Item' /&gt;" Guid="8c793cc3-d22b-442a-a2c4-87facc9b1b18" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8b8e2963fc2b6e86dd9c3cae6be0f90c.png" xmlns="">0ewQKBIE_M0Ci-eE7d5vSlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

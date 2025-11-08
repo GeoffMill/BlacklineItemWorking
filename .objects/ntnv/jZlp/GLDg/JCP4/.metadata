@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Reconciliations",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "JCP49sTSGUWg1rPpcCN42A",
+  "Reference": "keT-zgegR02CwGaH31CryQ/JCP49sTSGUWg1rPpcCN42A",
+  "ParentRef": "keT-zgegR02CwGaH31CryQ/GLDgaiszzU6RjbBccLWmFA",
+  "Created": "2025-10-27T10:59:06.1820072Z",
+  "Updated": "2025-10-27T10:59:06.1820072Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

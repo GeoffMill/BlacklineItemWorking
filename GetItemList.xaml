@@ -1,0 +1,304 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StandaloneGetItemList" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="StandaloneGetItemList_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetItemList" sap:VirtualizedContainerService.HintSize="1107,3328" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Items" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="570,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;GetItemList. Period is &quot; + PeriodSelect]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge BlackLine Systems" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="570,638" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[OpenURL]" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="e70c1626-e69f-48fc-ba41-160d37516833" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,469" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reconciliations'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e70c1626-e69f-48fc-ba41-160d37516833" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/ExecGrid.aspx" CVScreenId="2bd194be-ffe9-4a49-bc81-29cbdb18a501" ContentHash="Uxrpu9XUJkeJBzm4ceWMfg" CvTextArea="129, 243, 156, 21" CvTextArgument="Reconciliations" CvType="Text" DesignTimeRectangle="129, 241, 156, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='Reconciliations' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' tag='SPAN' type='' innertext='Reconciliations' check:innerText='Reconciliations' /&gt;" Guid="4b3c9b70-b44b-432f-b0d9-7eafa7267d02" InformativeScreenshot="878a8ac70178b1df54d055ed58690199.png" Reference="keT-zgegR02CwGaH31CryQ/JCP49sTSGUWg1rPpcCN42A" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='View Reconciliations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="2bd194be-ffe9-4a49-bc81-29cbdb18a501" CvTextArea="171, 187, 209, 32" CvTextArgument="BLACKLINE" CvType="Text" DesignTimeRectangle="117, 163, 272, 56" FullSelectorArgument="&lt;webctrl aria-role='img' tag='SPAN' aria-label='Home' /&gt;" Guid="b9066682-5427-4cbc-ba2a-cd7e01108e1b" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Label 'View All Items''" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/ExecGrid.aspx" CVScreenId="c4946b57-642c-4b4b-9e38-0e5a60ddd81e" ContentHash="0TgV7NE1n0eIw-R0QD2jNQ" DesignTimeRectangle="125, 274, 210, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='button' aaname='View All Items' innertext='View All Items' /&gt;" Guid="2b48d1e9-edc7-4c5d-b47d-462bb433aa61" InformativeScreenshot="b39c8a75c6476b18ebc5bee53942cbce.png" Reference="keT-zgegR02CwGaH31CryQ/j-Kurh2ciUeBCa3j2uAcFQ" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='View Reconciliations' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="c4946b57-642c-4b4b-9e38-0e5a60ddd81e" CvTextArea="128, 243, 158, 21" CvTextArgument="Reconciliations" CvType="Text" DesignTimeRectangle="129, 241, 156, 26" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='Reconciliations' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' type='' innertext='Reconciliations' check:innerText='Reconciliations' /&gt;" Guid="538f34b2-772d-4ec0-9110-43e4b99d068e" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label 'View All Items''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e70c1626-e69f-48fc-ba41-160d37516833" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/ExecGrid.aspx" CVScreenId="c4946b57-642c-4b4b-9e38-0e5a60ddd81e" ContentHash="0TgV7NE1n0eIw-R0QD2jNQ" DesignTimeRectangle="125, 274, 210, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='button' aaname='View All Items' innertext='View All Items' /&gt;" Guid="2b48d1e9-edc7-4c5d-b47d-462bb433aa61" InformativeScreenshot="b39c8a75c6476b18ebc5bee53942cbce.png" Reference="keT-zgegR02CwGaH31CryQ/j-Kurh2ciUeBCa3j2uAcFQ" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='View Reconciliations' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c4946b57-642c-4b4b-9e38-0e5a60ddd81e" CvTextArea="128, 243, 158, 21" CvTextArgument="Reconciliations" CvType="Text" DesignTimeRectangle="129, 241, 156, 26" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='Reconciliations' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' type='' innertext='Reconciliations' check:innerText='Reconciliations' /&gt;" Guid="538f34b2-772d-4ec0-9110-43e4b99d068e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Edge" ContentHash="fT6XXpODqUmwgraD4qUCdA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVDhPlZNNSFRRGIbvxkUiFN6fuX8zc8e53XAhuhRFqCxKRAK1FBdl5UosFGdhIbXJCBcGmeAfZvlT5m60fbu2tUuiFhIRloMz5c/iwtt37rnT3LlB2YEP7pxznvd87/sxQn4drCr4n8qkG+Z8VBBM23YPViU6OEyJ+DSrwEf5Mg4pkHshYaJPw5NBLSSQ/JeAiHfjMrqbTLwdZxZEZNfqChb+JrD/UsJ8SvXgrYXCfpGAVmG7u3QxCLL6uSKh/6KBm+0Gwuc+ypcUt92ucyayzwsXvtFrradNPOjRqQvR3xfx5amEe9eMPzNIdRq4dMZEjkQySxLO10fpov5bkNWbMQUD1M3neQk7a/XBDJKehfazJi6ciqKxNgyLSN+J4O4VHXu+lUy6SICH+HFGxlHDQk11zBsZ29sneOKG5o2Pfef3fJQvJrBLgbU2mqiqikGz4pjuV72XHxP8qFfzQFbbZO9hrx4KMWa7HRQiAz9MyVi5reKYbuH+dR1DXRSiD7+flDFC1raehcZYTgJCeQLTA+xV3mLzySjKVAvfFzm8QfBgp47MMv+dW68tFjgSsbwQmZXNORmVlTGUyBaGL+v4SqNLdRjI+rmw+vEq0IFIAq9HFc/C0i0VbTTOMfJ9tcVAKXXRQt1skLU8zLLZWQ/8GyMJx7VOONAqHCgJB7LlIO44iB7n31rSATsPFicF4RdH6OoDeRpyFAAAAABJRU5ErkJggg==" InformativeScreenshot="443973e9b6775d6262fb42bf44ae32df.jpg" Reference="keT-zgegR02CwGaH31CryQ/GLDgaiszzU6RjbBccLWmFA" Selector="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge BlackLine Systems(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="570,943" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="24d2cc75-ba36-4e9e-b032-406054830200" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,694" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'select'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24d2cc75-ba36-4e9e-b032-406054830200" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="ab07519b-e97f-4317-a2e5-495f500a8333" ContentHash="EbkfzSSYvUWxHbnnPI3mVA" CvElementArea="704, 980, 68, 35" CvType="InputBox" DesignTimeRectangle="747, 986, 18, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='A' aaname='select' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='select' check:innerText='select' /&gt;" Guid="f06a8958-8825-4d48-b780-b79705f58ba7" InformativeScreenshot="75aa4873a23926dde44741f7e3063981.png" Reference="keT-zgegR02CwGaH31CryQ/eLOyzniH00u-1Mu7oUJ01Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ab07519b-e97f-4317-a2e5-495f500a8333" CvTextArea="632, 988, 66, 16" CvTextArgument="Page size:" CvType="Text" DesignTimeRectangle="633, 984, 64, 22" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' aaname='Page size:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Page size:' check:innerText='Page size:' /&gt;" Guid="e3044e1d-dd87-438b-9030-6e3a83c6c52d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '50'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24d2cc75-ba36-4e9e-b032-406054830200" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="4710a353-e9ea-4c51-93fd-ca476666fa29" ContentHash="Fl-3sVvNJUSckZDg6LkjNw" CvTextArea="712, 958, 20, 14" CvTextArgument="50" CvType="Text" DesignTimeRectangle="705, 951, 65, 30" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='rcbItem' aaname='50' innertext='50' /&gt;" Guid="0efa1936-1dd1-4b22-a3c3-093afd1573ee" InformativeScreenshot="e780419f9d1d24908d7c6ac8b7bd8390.png" Reference="keT-zgegR02CwGaH31CryQ/vNXW9XB9DkWoCkD1k4aI3g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="4710a353-e9ea-4c51-93fd-ca476666fa29" CvTextArea="712, 928, 20, 14" CvTextArgument="20" CvType="Text" DesignTimeRectangle="705, 921, 65, 30" ElementType="ListItem" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl class='rcbItem' matching:class='fuzzy' fuzzylevel:class='0.0' type='' aaname='20' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='20' check:innerText='20' /&gt;" Guid="71598718-cf8c-4cd8-b138-7c61ae86f17b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Items]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Attachment'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='SourceId'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Path'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='input' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='22' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="24d2cc75-ba36-4e9e-b032-406054830200" Version="V4">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="0d359994-44c4-458e-8229-04226c626a91" CvElementArea="558, 979, 31, 31" CvTextArea="569, 988, 9, 12" CvTextArgument="&gt;" CvType="Button" DesignTimeRectangle="560, 981, 28, 28" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='20' tag='TABLE' /&gt;&lt;webctrl aria-label='Next Page' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-label='Next Page' type='submit' tag='INPUT' class='rgPageNext' aaname='Next Page' /&gt;" Guid="8b3c1f0c-29ac-433a-918c-d40348b78172" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" WaitForReadyArgument="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" ContentHash="zygG4mzH7UeE5OJ0pkUa-Q" DesignTimeRectangle="32, -425, 7227, 1398" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="c31ddbb9-e4fc-4a7f-95ab-d8a84e0d8325" InformativeScreenshot="f532728a459bdeb4a465266cc28148e2.png" Reference="keT-zgegR02CwGaH31CryQ/--KtvkpM40iTzCsLtBk-dg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Edge" ContentHash="7HuJ9-3Vvk27C7L5o5eXgw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVDhPlZNNSFRRGIbvxkUiFN6fuX8zc8e53XAhuhRFqCxKRAK1FBdl5UosFGdhIbXJCBcGmeAfZvlT5m60fbu2tUuiFhIRloMz5c/iwtt37rnT3LlB2YEP7pxznvd87/sxQn4drCr4n8qkG+Z8VBBM23YPViU6OEyJ+DSrwEf5Mg4pkHshYaJPw5NBLSSQ/JeAiHfjMrqbTLwdZxZEZNfqChb+JrD/UsJ8SvXgrYXCfpGAVmG7u3QxCLL6uSKh/6KBm+0Gwuc+ypcUt92ucyayzwsXvtFrradNPOjRqQvR3xfx5amEe9eMPzNIdRq4dMZEjkQySxLO10fpov5bkNWbMQUD1M3neQk7a/XBDJKehfazJi6ciqKxNgyLSN+J4O4VHXu+lUy6SICH+HFGxlHDQk11zBsZ29sneOKG5o2Pfef3fJQvJrBLgbU2mqiqikGz4pjuV72XHxP8qFfzQFbbZO9hrx4KMWa7HRQiAz9MyVi5reKYbuH+dR1DXRSiD7+flDFC1raehcZYTgJCeQLTA+xV3mLzySjKVAvfFzm8QfBgp47MMv+dW68tFjgSsbwQmZXNORmVlTGUyBaGL+v4SqNLdRjI+rmw+vEq0IFIAq9HFc/C0i0VbTTOMfJ9tcVAKXXRQt1skLU8zLLZWQ/8GyMJx7VOONAqHCgJB7LlIO44iB7n31rSATsPFicF4RdH6OoDeRpyFAAAAABJRU5ErkJggg==" InformativeScreenshot="3472362d568ead8d09c4c78448fbf9f7.jpg" Reference="keT-zgegR02CwGaH31CryQ/RCKhh4Z-GUS_JrCdhJq2DA" Selector="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" Url="https://smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:FilterDataTable DataTable="[dt_Items]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="570,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_Items]" SelectColumnsMode="Remove">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Attachment"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Attachment" DataTable="[dt_Items]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="570,218" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_2" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AutoIncrement="{x:Null}" Column="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" AllowDBNull="False" ColumnName="Year" DataTable="[dt_Items]" DefaultValue="[YearSelect]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="570,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AutoIncrement="{x:Null}" Column="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" AllowDBNull="False" ColumnName="Period" DataTable="[dt_Items]" DefaultValue="[PeriodSelect]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="570,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="570,704" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,594" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="502,534" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath=".files\Item List.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,242" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX Append="True" Destination="[Excel.Table(&quot;ItemList&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[dt_Items]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
