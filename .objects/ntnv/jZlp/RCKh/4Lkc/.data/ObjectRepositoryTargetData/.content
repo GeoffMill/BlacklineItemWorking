@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vLg6KJrD7kmTLnpaDkeLTg" Reference="keT-zgegR02CwGaH31CryQ/4LkcvO_kF0CB2Iksjb6aDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="fa766394-6398-4a3e-a976-ba93ca1bee76" CvElementArea="743, 524, 22, 24" CvType="Icon" DesignTimeRectangle="745, 526, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='INPUT' title='Documents Attached To This Item' value='{0}' /&gt;&quot;, AttachURL)]" Guid="de630cf9-dfe8-4ce1-afcc-43c41b6b24f5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACPSURBVEhL7ZXRDYAgDAWdhj0YhD2Ygz0YhKlqHpGEaGkR4UsuuRgDcvIhHrSYHVBhAzFGcs6JhhCu2TJswFqbF/HeP8SYMSbbE2kGWg8jUnbQExkOgJ7IpwDQIkMBjONaxD3keB1IKeUd1E4NcGDuDojsgMpPA7A+DiTL18zBBvBG9+NAEz8pDjYwk8UBohNI/xv+3A58WwAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fa766394-6398-4a3e-a976-ba93ca1bee76" CvTextArea="1212, 527, 297, 17" CvTextArgument="RECONCIL AP WITH GL JAN-19.xlsx" CvType="Text" DesignTimeRectangle="1214, 525, 295, 21" ElementType="Text" FuzzyAccuracy="0.9" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='A' class='' matching:class='fuzzy' fuzzylevel:class='0.0' colName='Document Name' check:innerText='{0}' /&gt;&quot;, DocName)]" Guid="d63500d7-b288-462a-ad7a-d0560b43989b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6856f7fda2aa7afa682fb42c32c54bef.png" xmlns="">0sIFX7ZHZhEKcuoA_oJk5tA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="2">
+      <ObjectRepositoryVariableData DefaultValue="/ViewDocument.aspx?x=w8bQzL2PhaWx%2fyYKmH3ny8MNaf45avlsGhEAFqHS8%2fgJZcd8NwZ%2f%2fKVWXIJIJweDNfq4a5QqEsmlSTcwG63dAw%3d%3d" Name="AttachURL" />
+      <ObjectRepositoryVariableData DefaultValue="RECONCIL AP WITH GL JAN-19.xlsx" Name="DocName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

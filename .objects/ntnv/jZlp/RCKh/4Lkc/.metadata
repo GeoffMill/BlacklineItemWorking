@@ -1,0 +1,14 @@
+﻿{
+  "Name": "RECONCIL AP WITH GL JAN…",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "4LkcvO_kF0CB2Iksjb6aDw",
+  "Reference": "keT-zgegR02CwGaH31CryQ/4LkcvO_kF0CB2Iksjb6aDw",
+  "ParentRef": "keT-zgegR02CwGaH31CryQ/RCKhh4Z-GUS_JrCdhJq2DA",
+  "Created": "2025-11-12T10:02:44.8447157Z",
+  "Updated": "2025-11-12T10:02:44.8447157Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fhMgPyWDvkymyOJ27n298w" Reference="keT-zgegR02CwGaH31CryQ/GAMh8ECTkUODc7O5zluTRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="7738e5b5-329b-4f63-a65b-340e26f4b927" CvElementArea="87, 205, 68, 30" CvTextArea="103, 212, 35, 17" CvTextArgument="Keep" CvType="Button" DesignTimeRectangle="87, 132, 66, 28" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl role='outline item' /&gt;&lt;ctrl name='Keep' role='push button' text='Keep' /&gt;" Guid="58566f0b-ac45-4802-a63d-e4db5e0849cb" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7738e5b5-329b-4f63-a65b-340e26f4b927" CvElementArea="160, 205, 78, 29" CvTextArea="177, 212, 45, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="162, 132, 76, 28" ElementType="Button" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;ctrl name='Downloads' matching:name='fuzzy' fuzzylevel:name='0.0' role='document' /&gt;&lt;ctrl name='Sales+Rebate (1).msg' matching:name='fuzzy' fuzzylevel:name='0.0' role='outline item' /&gt;&lt;ctrl name='Delete' matching:name='fuzzy' fuzzylevel:name='0.0' role='push button' text='Delete' /&gt;" Guid="0273a435-8687-43de-816c-2b9ba479ff19" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7fa4edfdf15b214977914edf3c6b8640.png" xmlns="">0ZletWZeUS0uG5apU88CW_g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

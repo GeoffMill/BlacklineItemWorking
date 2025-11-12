@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.8.0",
-  "projectVersion": "1.0.1",
+  "projectVersion": "1.0.4",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -57,7 +57,7 @@
     },
     {
       "filePath": "ProcessExtracts.xaml",
-      "uniqueId": "94383ad5-1534-46c2-ba5b-f581453505fd",
+      "uniqueId": "cc8efbc8-5223-4ee3-80fd-a580b40e5740",
       "input": [],
       "output": []
     }

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Keep",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "GAMh8ECTkUODc7O5zluTRg",
+  "Reference": "keT-zgegR02CwGaH31CryQ/GAMh8ECTkUODc7O5zluTRg",
+  "ParentRef": "keT-zgegR02CwGaH31CryQ/RCKhh4Z-GUS_JrCdhJq2DA",
+  "Created": "2025-11-12T13:20:41.7687976Z",
+  "Updated": "2025-11-12T13:20:41.7687976Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
