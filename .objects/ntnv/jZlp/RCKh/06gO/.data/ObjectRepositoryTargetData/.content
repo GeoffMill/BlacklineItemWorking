@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RRLpT81Is06AQ82zRzBIVw" Reference="keT-zgegR02CwGaH31CryQ/06gOMigRlE-D7AKJhHS_EQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/Modules/Reconciliations/Items/AllItems.aspx" CVScreenId="d944f724-44ba-4914-98d0-b8985de44146" DesignTimeRectangle="829, 301, 332, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' colName='Source ID' innertext='{0}' /&gt;&quot;, SourceId)]" Guid="903b5118-fe44-4e5e-b3d9-5cbcc03a10eb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BlackLine Systems' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="9d2238b0c27217864f8465746e87db4b.png" xmlns="">0W7GyD-zT60ykR5zfcJFmcQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="SourceId" />
+    </scg:List>
+    <x:String x:Key="ActivityType">KeyboardShortcut</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

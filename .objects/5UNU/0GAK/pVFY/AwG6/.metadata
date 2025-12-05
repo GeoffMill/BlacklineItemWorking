@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Home-SelectedPeriod",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "AwG6r7oTnUaDh52NU_adOQ",
+  "Reference": "keT-zgegR02CwGaH31CryQ/AwG6r7oTnUaDh52NU_adOQ",
+  "ParentRef": "keT-zgegR02CwGaH31CryQ/pVFY6jbmgk-MMm1q6SqsNg",
+  "Created": "2025-11-17T13:37:15.8668987Z",
+  "Updated": "2025-11-17T13:37:15.8668987Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
