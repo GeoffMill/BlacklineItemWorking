@@ -101,7 +101,7 @@
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExtractPath" sap:VirtualizedContainerService.HintSize="1107,1977" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExtractPath" sap:VirtualizedContainerService.HintSize="1107,2685" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="NewPath" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_CoMapping" />
@@ -113,8 +113,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="638,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Extract Path ..start&quot;]" />
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Get Company Name Swap" sap:VirtualizedContainerService.HintSize="638,84" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="708,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Extract Path ..start&quot;]" />
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Get Company Name Swap" sap:VirtualizedContainerService.HintSize="708,84" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
@@ -159,43 +159,35 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_AttachmentList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="638,1533" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_AttachmentList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="708,2241" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,1337" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="674,2045" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[CurrentRow(&quot;Status&quot;).ToString=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="570,1277" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[CurrentRow(&quot;Status&quot;).ToString=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="640,1985" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,1027" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="606,1735" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim DashCount, DashOne, DashTwo, DashThree, DashFour, DashFive As Integer&#xD;&#xA;Dim Company, ShortCompany, Account, SiteFunc, Rest As String&#xD;&#xA;Dim CompanyMap() As DataRow&#xD;&#xA;&#xD;&#xA;outSuccess=True&#xD;&#xA;DashCount = InPath.Length - InPath.TrimEnd(&quot;-&quot;c).Length&#xD;&#xA;InPath = InPath.TrimEnd(&quot;-&quot;c)&#xD;&#xA;DashOne = InPath.IndexOf(&quot;-&quot;)&#xD;&#xA;DashTwo = InPath.IndexOf(&quot;-&quot;, DashOne + 1)&#xD;&#xA;DashThree = InPath.IndexOf(&quot;-&quot;, DashTwo + 1)&#xD;&#xA;Company = InPath.Substring(0, DashTwo)&#xD;&#xA;&#xD;&#xA;CompanyMap = InCoMapping.Select(&quot;FromCompany = '&quot; &amp; Company &amp; &quot;'&quot;)&#xD;&#xA;If CompanyMap.Length &gt; 0 Then&#xD;&#xA;&#x9;Company = CompanyMap(0)(&quot;ToCompany&quot;).ToString&#xD;&#xA;&#x9;ShortCompany = Company.substring(0,3) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;If DashCount=1 Then&#xD;&#xA;&#x9;&#x9;Account = InPath.Substring(DashTwo + 1, DashThree - DashTwo - 1) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;DashFour = InPath.IndexOf(&quot;-&quot;, DashThree + 1)&#xD;&#xA;&#x9;&#x9;DashFive = InPath.IndexOf(&quot;-&quot;, DashFour + 1)&#xD;&#xA;&#x9;&#x9;SiteFunc = InPath.Substring(DashThree + 1, DashFive - DashThree - 1) .Replace(&quot;-&quot;, &quot;.&quot;) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;Rest = InPath.Substring(DashFive+ 1).Replace(&quot;-&quot;, &quot;.&quot;)&#xD;&#xA;&#x9;&#x9;OutPath = Company.TrimEnd(&quot;.&quot;c) &amp; &quot;\&quot; &amp; ShortCompany &amp; SiteFunc &amp; Account &amp; Rest.TrimEnd(&quot;.&quot;c)&#xD;&#xA;&#x9;ElseIf DashCount=7 Then&#xD;&#xA;&#x9;&#x9;Account = InPath.Substring(DashTwo + 1, InPath.LastIndexOf(&quot;-&quot;c)  - DashTwo - 1) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;Rest = InPath.Substring(InPath.LastIndexOf(&quot;-&quot;c) + 1) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;OutPath = Company.TrimEnd(&quot;.&quot;c) &amp; &quot;\&quot; &amp; ShortCompany &amp; Rest &amp; Account&#xD;&#xA;&#x9;Else&#xD;&#xA;&#x9;&#x9;Account = InPath.Substring(DashTwo + 1)&#xD;&#xA;&#x9;&#x9;OutPath = Company.TrimEnd(&quot;.&quot;c) &amp; &quot;\&quot; &amp; ShortCompany &amp; Account.TrimEnd(&quot;-&quot;c)&#xD;&#xA;&#x9;End If&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;If (Account=&quot;&quot; Or Account=&quot;.&quot;) And (Rest=&quot;&quot; Or Rest=&quot;.&quot;)&#xD;&#xA;&#x9;&#x9;outSuccess=False&#xD;&#xA;&#x9;End If&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="502,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim DashCount, DashOne, DashTwo, DashThree, DashFour, DashFive As Integer&#xD;&#xA;Dim Company, ShortCompany, Account, SiteFunc, Rest As String&#xD;&#xA;Dim CompanyMap() As DataRow&#xD;&#xA;Dim invalidChars As Char() = IO.Path.GetInvalidFileNameChars()&#xD;&#xA;&#xD;&#xA;outSuccess=True&#xD;&#xA;DashCount = InPath.Length - InPath.TrimEnd(&quot;-&quot;c).Length&#xD;&#xA;InPath = InPath.TrimEnd(&quot;-&quot;c)&#xD;&#xA;DashOne = InPath.IndexOf(&quot;-&quot;)&#xD;&#xA;DashTwo = InPath.IndexOf(&quot;-&quot;, DashOne + 1)&#xD;&#xA;DashThree = InPath.IndexOf(&quot;-&quot;, DashTwo + 1)&#xD;&#xA;Company = InPath.Substring(0, DashTwo)&#xD;&#xA;&#xD;&#xA;CompanyMap = InCoMapping.Select(&quot;FromCompany = '&quot; &amp; Company &amp; &quot;'&quot;)&#xD;&#xA;If CompanyMap.Length &gt; 0 Then&#xD;&#xA;&#x9;Company = CompanyMap(0)(&quot;ToCompany&quot;).ToString&#xD;&#xA;&#x9;ShortCompany = Company.substring(0,3) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;If DashCount=1 Then&#xD;&#xA;&#x9;&#x9;Account = InPath.Substring(DashTwo + 1, DashThree - DashTwo - 1) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;For Each ch As Char In invalidChars&#xD;&#xA;&#x9;        Account = Account.Replace(ch, &quot;_&quot;c)&#xD;&#xA;&#x9;    Next&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;DashFour = InPath.IndexOf(&quot;-&quot;, DashThree + 1)&#xD;&#xA;&#x9;&#x9;DashFive = InPath.IndexOf(&quot;-&quot;, DashFour + 1)&#xD;&#xA;&#x9;&#x9;SiteFunc = InPath.Substring(DashThree + 1, DashFive - DashThree - 1) .Replace(&quot;-&quot;, &quot;.&quot;) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;Rest = InPath.Substring(DashFive+ 1).Replace(&quot;-&quot;, &quot;.&quot;)&#xD;&#xA;&#x9;&#x9;OutPath = Company.TrimEnd(&quot;.&quot;c) &amp; &quot;\&quot; &amp; ShortCompany &amp; SiteFunc &amp; Account &amp; Rest.TrimEnd(&quot;.&quot;c)&#xD;&#xA;&#x9;ElseIf DashCount=7 Then&#xD;&#xA;&#x9;&#x9;Account = InPath.Substring(DashTwo + 1, InPath.LastIndexOf(&quot;-&quot;c)  - DashTwo - 1)&#xD;&#xA;&#x9;&#x9;For Each ch As Char In invalidChars&#xD;&#xA;&#x9;        Account = Account.Replace(ch, &quot;_&quot;c)&#xD;&#xA;&#x9;    Next&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;Rest = InPath.Substring(InPath.LastIndexOf(&quot;-&quot;c) + 1) &amp; &quot;.&quot;&#xD;&#xA;&#x9;&#x9;OutPath = Company.TrimEnd(&quot;.&quot;c) &amp; &quot;\&quot; &amp; ShortCompany &amp; Rest &amp; Account&#xD;&#xA;&#x9;Else&#xD;&#xA;&#x9;&#x9;Account = InPath.Substring(DashTwo + 1)&#xD;&#xA;&#x9;&#x9;For Each ch As Char In invalidChars&#xD;&#xA;&#x9;        Account = Account.Replace(ch, &quot;_&quot;c)&#xD;&#xA;&#x9;    Next&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;OutPath = Company.TrimEnd(&quot;.&quot;c) &amp; &quot;\&quot; &amp; ShortCompany &amp; Account.TrimEnd(&quot;-&quot;c)&#xD;&#xA;&#x9;&#x9;Rest = &quot;not used&quot; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'making sure this isn't seen as a failure &#xD;&#xA;&#x9;End If&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;If (Account=&quot;&quot; Or Account=&quot;.&quot;) And (Rest=&quot;&quot; Or Rest=&quot;.&quot;)&#xD;&#xA;&#x9;&#x9;outSuccess=False&#xD;&#xA;&#x9;End If&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="572,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
                     <ui:InvokeCode.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="InPath">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(&quot;Path&quot;).ToString" />
-                      </InArgument>
-                      <OutArgument x:TypeArguments="x:String" x:Key="outPath">
-                        <VisualBasicReference x:TypeArguments="x:String" ExpressionText="NewPath" />
-                      </OutArgument>
-                      <InArgument x:TypeArguments="sd:DataTable" x:Key="InCoMapping">
-                        <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dt_CoMapping" />
-                      </InArgument>
-                      <OutArgument x:TypeArguments="x:Boolean" x:Key="outSuccess">
-                        <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="GoodToGo" />
-                      </OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="InPath">[CurrentRow("Path").ToString]</InArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="outPath">[NewPath]</OutArgument>
+                      <InArgument x:TypeArguments="sd:DataTable" x:Key="InCoMapping">[dt_CoMapping]</InArgument>
+                      <OutArgument x:TypeArguments="x:Boolean" x:Key="outSuccess">[GoodToGo]</OutArgument>
                     </ui:InvokeCode.Arguments>
                   </ui:InvokeCode>
-                  <Assign sap:VirtualizedContainerService.HintSize="502,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign sap:VirtualizedContainerService.HintSize="572,114" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Object">[CurrentRow("Path")]</OutArgument>
                     </Assign.To>
@@ -203,8 +195,54 @@
                       <InArgument x:TypeArguments="x:Object">[PeriodSelect + "\" + NewPath]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:FolderExistsX DisplayName="Folder Exists" Exists="[PathExists]" sap:VirtualizedContainerService.HintSize="502,165" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[Config(&quot;OneDriveFolder&quot;) + CurrentRow(&quot;Path&quot;).ToString]" />
-                  <If Condition="[PathExists and GoodToGo]" sap:VirtualizedContainerService.HintSize="502,491" sap2010:WorkflowViewState.IdRef="If_2">
+                  <ui:FolderExistsX DisplayName="Folder Exists" Exists="[PathExists]" sap:VirtualizedContainerService.HintSize="572,165" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[Config(&quot;OneDriveFolder&quot;) + CurrentRow(&quot;Path&quot;).ToString]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="572,708" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="536,597" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[PathExists=False and CurrentRow(&quot;Path&quot;).ToString.EndsWith(&quot;.0000.000&quot;)]" DisplayName="Create Folder only if it's a full account string" sap:VirtualizedContainerService.HintSize="502,537" sap2010:WorkflowViewState.IdRef="If_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,287" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[Config(&quot;OneDriveFolder&quot;) + CurrentRow(&quot;Path&quot;).ToString]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[PathExists]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <If Condition="[PathExists and GoodToGo]" sap:VirtualizedContainerService.HintSize="572,491" sap2010:WorkflowViewState.IdRef="If_2">
                     <If.Then>
                       <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
@@ -256,6 +294,6 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="638,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Extract Path ..start&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="708,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Extract Path ..start&quot;]" />
   </Sequence>
 </Activity>

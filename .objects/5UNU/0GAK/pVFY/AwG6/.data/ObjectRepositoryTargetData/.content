@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="o2hxrRoE9Em00WF0vJKUVA" Reference="keT-zgegR02CwGaH31CryQ/AwG6r7oTnUaDh52NU_adOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smithsmedical.na3.blackline.com/HomePages/HomeExec.aspx" CVScreenId="85f30ba2-a7ad-4355-9813-516403d4bb68" DesignTimeRectangle="1169, 354, 291, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' class='period' parentid='gh-period-selector-panel' innertext='{0}' /&gt;&quot;, PeriodSelect)]" Guid="34694526-444c-496d-93b0-6727e4a318af" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="85f30ba2-a7ad-4355-9813-516403d4bb68" DesignTimeRectangle="1185, 290, 38, 20" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='gh-period-selector-panel' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' innertext='{0}' check:innerText='{0}' /&gt;&quot;, YearSelect)]" Guid="c1fc783b-4498-449d-a779-af0b628d07e9" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1dc2b83d832dd0d3aff35b5b26b56e92.png" xmlns="">0DQ2NwsF9l0ykxWVhaiCT0w</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="2">
+      <ObjectRepositoryVariableData DefaultValue="JAN-25" Name="PeriodSelect" />
+      <ObjectRepositoryVariableData DefaultValue="2025" Name="YearSelect" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
